@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <title>LAMP EXAMPLE</title>
+    </head>
+    <script type="text/javascript">
+    
+    function change(state) {
+      var lampImg = document.getElementById("lamp");
+      lampImg.src = "test_" + state + ".gif";
+      var statusDiv = document.getElementById("statusDiv");
+      statusDiv.innerHTML = "The lamp is " + state;
+    }
+    
+        
+    </script>
+    <body>
+    
+    
+        <img src="test_on.gif" onmouseover="change('off')" onmouseout="change('on')" id="lamp"/>
+      
+        <div id="statusDiv"></div>
+        
+         
+    </body>
+
